@@ -92,7 +92,7 @@ nav ul li a:hover::after{
 
 #about{
 
-    padding: 200px 0;
+    padding: 50px 0;
     color: #ababab
 
 }
@@ -151,17 +151,17 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background:#ff004f;
+    background: #DBD8E3;
     position: absolute;
     left: 0;
-    bottom: -8px;
-    transition: 0.3s;
+    bottom: -6px;
+    transition: 0.5s;
 
 }
 
 .tab-links.active-link::after{
 
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -188,5 +188,140 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
 
     display: block;
+
+}
+
+/*---------portfolio-------------*/
+
+#portfolio{
+
+    padding: 50px 0;
+    color: white;
+
+}
+
+.work-list{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.work{
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.work img{
+
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+
+
+.layer {
+
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #2A2438);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+
+}
+
+.layer h3{
+
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a {
+
+    color: #ff004f;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.layer a .fa-brands {
+    font-size: 40px; 
+    margin-top: 10px;
+    color:#2A2438;
+}
+
+.repo-text {
+    font-size: 16px;
+    color:  	#fafbfc;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    transition: color 0.3s;
+}
+
+.repo-text:hover {
+    color:  	#ff004f;
+    text-decoration: underline;
+}
+
+
+
+.work:hover img {
+
+    transform: scale(1.1);
+
+}
+
+.work:hover .layer {
+
+    height: 100%;
+
+}
+
+.btn {
+
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+
+}
+
+.btn:hover {
+
+    background: #ff004f;
 
 }
