@@ -1,4 +1,4 @@
-* {
+*{
 
     margin: 0;
     padding: 0;
@@ -7,17 +7,17 @@
 
 }
 
-body {
+body{
 
     background: #2A2438;
     color:#DBD8E3;
 }
 
-.container {
+.container{
     padding: 10px 10%;
 }
 
-nav {
+nav{
 
     display: flex;
     align-items: center;
@@ -26,13 +26,13 @@ nav {
 
 }
 
-.logo {
+.logo{
 
     width: 140px;
 
 }
 
-nav ul li {
+nav ul li{
 
     display: inline-block;
     list-style: none;
@@ -40,7 +40,7 @@ nav ul li {
 
 }
 
-nav ul li a {
+nav ul li a{
 
     color: #DBD8E3;
     text-decoration: none;
@@ -49,7 +49,7 @@ nav ul li a {
 
 }
 
-nav ul li a::after {
+nav ul li a::after{
 
     content: '';
     width: 0;
@@ -62,7 +62,7 @@ nav ul li a::after {
 
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after{
 
     width: 100%;
 
@@ -76,7 +76,7 @@ nav ul li a:hover::after {
 
 }
 
-.header-text h1 {
+.header-text h1{
 
     font-size: 60px;
     margin-top: 50px;
@@ -86,5 +86,107 @@ nav ul li a:hover::after {
 .header-text h1 span{
 
     color: #ff004f;
+
+}
+/*---------about-------------*/
+
+#about{
+
+    padding: 200px 0;
+    color: #ababab
+
+}
+
+.row{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.text-col{
+
+    flex-basis: 80%
+
+}
+
+.image-col{
+
+    width: 100%;
+    border-radius: 1155px;
+}
+
+.subtitle{
+
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.tab-titles{
+
+
+    display: flex;
+    margin: 20px 0 40px;
+
+
+}
+
+.tab-links{
+
+
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after{
+
+
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+
+}
+
+.tab-links.active-link::after{
+
+    width: 50%;
+
+}
+
+.tab-contents ul li{
+
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span{
+
+    color: #ff004f;
+    font-size: 20px;
+
+}
+
+.tab-contents{
+
+    display: none;
+
+}
+
+.tab-contents.active-tab{
+
+    display: block;
 
 }

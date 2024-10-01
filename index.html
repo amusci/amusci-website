@@ -20,13 +20,84 @@
                 </ul>
             </nav>
             <div class="header-text">
-
                 <p>Full-Stack Developer</p>
                 <h1>Hello! I am <span>Antonio Musciano</span><br> from the United States of America!</h1>
-
             </div>
         </div>
     </div>
+<!---------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="img-col">
+                    <img src="images/circle1.png" alt="picture_of_me">
+                </div>
+                <div class="text-col">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit vel omnis perspiciatis numquam esse, harum officia voluptatum laboriosam cumque minima assumenda alias ullam at exercitationem, suscipit voluptas molestiae quam. Laboriosam.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick = "openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick = "openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick = "openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Web Development</b></span><br>Building structured, clean, and responsive layouts.</li>
+                            <li><span><b>Software Development</b></span><br>Writing clean, scalable, and efficient code for various applications, mainly using C#, Java, JavaScript, and Python.</li>
+                            <li><span><b>Scripting/Automation</b></span><br>Automating tasks in Unix/Linux environments as well as data workflows with Bash and Python.</li>
+                            <li><span><b>Data Analysis</b></span><br>Extracting and parsing insights from data using statistical methods and visualization techniques with R and Python.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>Website Administrator</b> 2019 - 2024</span><br>Managed website functionality, ensuring security, timely updates, and SEO optimization for an enhanced user experience.</li>
+                            <li><span><b>IT Support Tier II</b> 2021 - 2024</span><br>Diagnosed hardware/software issues, ensured smooth transactions, mentored new hires, and supported merchants with payment systems.</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>Rutgers University</b> 2018 - 2022</span><br>3.8/4.0 GPA, Honors College Graduate.</li>
+                            
+                            <p>Computer Science Major</p>
+                            <p>Mathematics Minor</p>
+                            <p>Cybersecurity Certificate</p>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tabLinks = document.getElementsByClassName("tab-links")
+        var tabContents = document.getElementsByClassName("tab-contents")
+
+        function openTab(tabName) {
+
+            for (tabLink of tabLinks) {
+
+                tabLink.classList.remove("active-link");
+                
+            }
+
+            for (tabContent of tabContents) {
+
+                tabContent.classList.remove("active-tab");
+
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+
+        }
+
+
+    </script>
     
 </body>
 </html>
