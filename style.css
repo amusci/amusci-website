@@ -7,6 +7,11 @@
 
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
+
 body{
 
     background: #2A2438;
@@ -431,3 +436,7 @@ form .btn2{
     border-radius: 15px;
 
 }
+
+
+
+
