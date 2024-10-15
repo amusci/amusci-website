@@ -33,9 +33,11 @@ nav{
 
 .logo{
 
-    width: 140px;
-
+    padding-top: 50px;
+    width: 300px; 
+    height: auto; 
 }
+
 
 nav ul li{
 
@@ -76,7 +78,7 @@ nav ul li a:hover::after{
 
 .header-text{
 
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 30px;
 
 }
