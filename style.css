@@ -60,9 +60,10 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.header-text {
-  margin-top: 5%;
-  font-size: 30px;
+.header-text p {
+  margin-top: 0%;
+  margin-left: 6%;
+  font-size: 20px;
 }
 
 .header-text h1 {
@@ -100,13 +101,14 @@ nav ul li a:hover::after {
 }
 
 .subtitle {
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 600;
   color: white;
 }
 
 .tab-titles {
   display: flex;
+  justify-content: center;
   margin: 20px 0 40px;
 }
 
@@ -140,7 +142,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
   color: #ff004f;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .tab-contents {
